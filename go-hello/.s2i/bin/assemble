@@ -15,6 +15,7 @@ fi
 
 ls -al /tmp/src
 
+echo "Changed 3"
 echo "---> Installing application source..."
 cp -Rf /tmp/src/. /opt/app-root/
 
