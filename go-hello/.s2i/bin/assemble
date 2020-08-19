@@ -13,7 +13,10 @@ if [[ "$1" == "-h" ]]; then
 	exec /usr/libexec/s2i/usage
 fi
 
+echo "Contents of /tmp/src"
 ls -al /tmp/src
+echo "Contents of ."
+ls -al
 
 echo "Changed 3"
 echo "---> Installing application source..."
