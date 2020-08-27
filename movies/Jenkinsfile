@@ -5,6 +5,7 @@ pipeline {
     }
     agent {
       node {
+        label 'maven'
         //TODO: Add label for the Maven jenkins agent
       }
     }
