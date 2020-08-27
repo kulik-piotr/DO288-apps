@@ -12,7 +12,7 @@ pipeline {
 
     environment {
         //TODO: Customize these variables for your environment
-        USER_NAME="piotrkulik"
+        //USER_NAME="piotrkulik"
         DEV_PROJECT = "${USER_NAME}-movies-dev"
         STAGE_PROJECT = "${USER_NAME}-movies-stage"
         APP_GIT_URL = "https://github.com/${RHT_OCP4_GITHUB_USER}/DO288-apps"
@@ -27,6 +27,7 @@ pipeline {
 
         stage('Compilation Check') {
             steps {
+                echo 'version with changes to env vars'
                 echo '### Checking for compile errors ###'
                 sh '''
                         cd ${APP_NAME}
